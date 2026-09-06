@@ -2667,6 +2667,12 @@ public class JsBoxTestGenerated extends AbstractJsBoxTest {
     public void testUnusedMultibindingsDoNotGetValidated() {
       run("UnusedMultibindingsDoNotGetValidated.kt");
     }
+
+    @Test
+    @TestMetadata("WrappedMapKeyValuesStayDistinct.kt")
+    public void testWrappedMapKeyValuesStayDistinct() {
+      run("WrappedMapKeyValuesStayDistinct.kt");
+    }
   }
 
   @Nested

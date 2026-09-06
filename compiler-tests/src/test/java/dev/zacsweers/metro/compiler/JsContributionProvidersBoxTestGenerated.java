@@ -2667,6 +2667,12 @@ public class JsContributionProvidersBoxTestGenerated extends AbstractJsContribut
     public void testUnusedMultibindingsDoNotGetValidated() {
       run("UnusedMultibindingsDoNotGetValidated.kt");
     }
+
+    @Test
+    @TestMetadata("WrappedMapKeyValuesStayDistinct.kt")
+    public void testWrappedMapKeyValuesStayDistinct() {
+      run("WrappedMapKeyValuesStayDistinct.kt");
+    }
   }
 
   @Nested

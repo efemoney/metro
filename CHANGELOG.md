@@ -24,6 +24,7 @@ Changelog
 - **[IR]** Keep all transitively included binding containers when multiple graphs enter the same include cycle from different containers. Basically, improve compiler caching when containers are used in multiple graphs.
 - **[IR]** Fix a runtime crash when an assisted-injected class with no assisted parameters is used across modules with IR class generation.
 - **[IR]** Fix missing bindings for internal contributed objects across modules when `generateContributionProviders`, `generateClassesInIr`, and `contributesAsInject` are enabled together.
+- **[IR]** Report duplicate map keys when different key annotations unwrap to the same value, including implicit class keys.
 - **[IR]** Report missing required graph bindings even when an `@OptionalBinding` accessor requests the same type, regardless of declaration order.
 - **[IR]** Compare annotation values structurally so hash collisions don't merge distinct bindings.
 - **[IR]** Preserve JVM array component types and dimensions in source class-literal qualifiers.
