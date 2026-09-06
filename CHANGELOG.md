@@ -16,6 +16,7 @@ Changelog
 ### Fixes
 
 - **[FIR]** Fix a compiler crash on zero-parameter member-injection functions.
+- **[FIR]** Keep contributed graph accessors when their replacement or its origin is excluded.
 - **[FIR]** Avoid annotation-cache races during concurrent IDE analysis.
 - **[FIR]** Fix assisted factories whose return types nest or reorder factory type parameters.
 - **[FIR/IR/interop]** Fix recognition of `@get:BindsOptionalOf` properties when Dagger interop is enabled.
