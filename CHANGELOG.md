@@ -22,6 +22,9 @@ Changelog
 - **[FIR]** Avoid annotation-cache races during concurrent IDE analysis.
 - **[FIR]** Fix assisted factories whose return types nest or reorder factory type parameters.
 - **[FIR/IR/interop]** Fix recognition of `@get:BindsOptionalOf` properties when Dagger interop is enabled.
+- **[IR]** Keep dynamic graph arguments aligned when container order changes.
+- **[IR]** Prevent dynamic graph class name collisions when a generic binding container is used with different type arguments. Basically, graphs using `Bindings<Int>` and `Bindings<Long>` can coexist in the same file.
+- **[IR]** Avoid generated dynamic graph name collisions across sibling files.
 - **[IR]** Keep all transitively included binding containers when multiple graphs enter the same include cycle from different containers. Basically, improve compiler caching when containers are used in multiple graphs.
 - **[IR]** Fix a runtime crash when an assisted-injected class with no assisted parameters is used across modules with IR class generation.
 - **[IR]** Report an error when an assisted-injected constructor requests a set or eager map backed by suspend providers. Basically, assisted factories now get the same suspend-multibinding checks as ordinary injection.
