@@ -2746,6 +2746,12 @@ public class FastInitBoxTestGenerated extends AbstractFastInitBoxTest {
       }
 
       @Test
+      @TestMetadata("LayeredGenericDiamond.kt")
+      public void testLayeredGenericDiamond() {
+        run("LayeredGenericDiamond.kt");
+      }
+
+      @Test
       @TestMetadata("MemberInjectorRequest.kt")
       public void testMemberInjectorRequest() {
         run("MemberInjectorRequest.kt");
