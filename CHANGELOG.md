@@ -11,6 +11,7 @@ Changelog
 - **[IR]** Support suspend providers with switching providers.
 - **[IR]** Avoid revisiting shared supertypes when resolving generic bindings through diamond inheritance.
 - **[IR]** Reduce repeated work when validating suspend multibindings and reporting suspend-binding errors. Error traces now use cached, deterministic shortest paths to a suspend binding.
+- **[IR]** Reduce repeated dependency scans when checking cycles in graphs with large multibindings.
 - **[IR]** Avoid initializing the rich terminal renderer for plain compiler diagnostics.
 - **[Reports]** Explain binding choices in graph reports. Includes things like selection precedence, contribution filtering, and parent-graph ownership.
 
