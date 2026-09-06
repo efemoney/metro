@@ -3721,6 +3721,12 @@ public class BoxTestGenerated extends AbstractBoxTest {
     }
 
     @Test
+    @TestMetadata("InlinedProvidesAcrossModulesBytecodeCheck.kt")
+    public void testInlinedProvidesAcrossModulesBytecodeCheck() {
+      run("InlinedProvidesAcrossModulesBytecodeCheck.kt");
+    }
+
+    @Test
     @TestMetadata("InlinedProvidesBytecodeCheck.kt")
     public void testInlinedProvidesBytecodeCheck() {
       run("InlinedProvidesBytecodeCheck.kt");

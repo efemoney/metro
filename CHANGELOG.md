@@ -27,6 +27,7 @@ Changelog
 - **[IR]** Avoid generated dynamic graph name collisions across sibling files.
 - **[IR]** Keep all transitively included binding containers when multiple graphs enter the same include cycle from different containers. Basically, improve compiler caching when containers are used in multiple graphs.
 - **[IR]** Fix a runtime crash when an assisted-injected class with no assisted parameters is used across modules with IR class generation.
+- **[IR]** Restore primitive and string inline provider values from dependency metadata.
 - **[IR]** Report an error when an assisted-injected constructor requests a set or eager map backed by suspend providers. Basically, assisted factories now get the same suspend-multibinding checks as ordinary injection.
 - **[IR]** Fix missing bindings for internal contributed objects across modules when `generateContributionProviders`, `generateClassesInIr`, and `contributesAsInject` are enabled together.
 - **[IR]** Report duplicate map keys when different key annotations unwrap to the same value, including implicit class keys.
