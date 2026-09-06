@@ -18,6 +18,7 @@ Changelog
 ### Fixes
 
 - **[FIR]** Fix a compiler crash on zero-parameter member-injection functions.
+- **[FIR]** Fix graphs accidentally implementing binding-container interfaces when contributions use different scopes. Basically, checking another scope won't turn a container that supplies bindings into an interface the graph implements.
 - **[FIR]** Keep contributed graph accessors when their replacement or its origin is excluded.
 - **[FIR]** Avoid annotation-cache races during concurrent IDE analysis.
 - **[FIR]** Fix assisted factories whose return types nest or reorder factory type parameters.
